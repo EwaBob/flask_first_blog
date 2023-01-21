@@ -1,0 +1,26 @@
+<html>
+  <head>
+<link href="/static/style.css" rel="stylesheet"/>
+  </head>
+
+  <button style="background-color:light-grey" onclick="location.href='http://127.0.0.1:5000/logout'" type="button"> <i>Powrót na stronę główną </i> </button>
+
+  <body style="background-color:thistle;">
+
+    <div align="center">
+        <p class="logo">Blog Flask</p>
+
+      <h1>Logowanie</h1>
+             <form action="" method="post">
+                 <input type="text" placeholder="login" name="username" value="{{request.form.username }}">
+                 <input type="password" placeholder="haslo" name="password" value="{{request.form.password }}">
+                 <input type="submit" value="Zaloguj">
+             </form>
+
+         {% if error %}
+        <p class="error">  {{ error }} {% endif %}
+    </div>
+  </body>
+
+
+</html>

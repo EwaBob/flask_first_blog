@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="/static/style.css" rel="stylesheet"/>
+  </head>
+
+<div>
+<br/>
+
+<body style="background-color:thistle;">
+<button style="background-color:light-grey" onclick="location.href='http://127.0.0.1:5000/logout'" type="button"> <i>Wyloguj i wróć na stronę główną </i> </button>
+<button style="background-color:light-grey" onclick="location.href='http://127.0.0.1:5000/post/create'" type="button"> <i>Dodaj nowy post</i></button>
+
+</div>
+<div align="center">
+<p class="logo">Blog Flask</p>
+</div>
+
+  {% for post in posts %}
+    <div align="center">
+        <ol style="font: bold 13pt /1cm 'Century'">
+            <a href="show/post/{{post}}"> {{ post }}</a>
+            <a href="update/{{post}}"><button type="submit">Edytuj post</button>  </a>
+            <a href="del/{{ post}}"><button type="submit">Usuń post</button></a>
+        </ol>
+  {% endfor %}
+
+

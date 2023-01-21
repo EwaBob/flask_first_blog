@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MOJ blog</title>
+    <link href="/static/style.css" rel="stylesheet"/>
+
+</head>
+
+
+<body style="background-color:thistle;">
+<body>
+    <div align="left">
+    <button onclick="location.href='http://127.0.0.1:5000/login'" type="button">Logowanie</button>
+    </div>
+<img src="/static/pexels-céline-13766882.jpg" width="450" align="right" alt="Zdjęcie"/>
+
+<div align="center">
+    <p class="logo">Blog Flask</p>
+
+</div>
+
+    <div align="center">
+    <table border = "3" cellpadding="20" cellspacing="30">
+
+     {% for post in posts%}
+    <tr bgcolor="#DCF2FD">
+        <td>  <a href="show/post/{{post}}"> {{ post }}</a></td>
+    </>
+    {% endfor %}
+
+    </table>
+
+
+</body>

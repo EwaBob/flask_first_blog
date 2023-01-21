@@ -1,0 +1,30 @@
+.logo {
+    color: navy;
+    text-align: center;
+    font-family: 'Ravie';
+    font-size: 60px;
+    margin: 50px;
+
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 55px;
+
+p {
+color: black
+}
+
+body {
+ background-color: thistle;
+}
+
+.post-title {
+    text-align: center;
+    color: red;
+    font-family: 'Ravie';
+    font-size: 300px;
+    margin: 50px;
+}
+

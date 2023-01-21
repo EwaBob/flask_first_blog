@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<div>
+
+<button style="background-color:light-grey" onclick="location.href='http://127.0.0.1:5000/edition'" type="button"> <i>Powrót do edycji </i> </button>
+<button style="background-color:light-grey" onclick="location.href='http://127.0.0.1:5000/logout'" type="button"> <i>Wyloguj i wróć na stronę główną<i></i></button>
+
+</div>
+<div align="center">
+<body style="background-color:thistle;">
+<div align="center">
+  <br>
+
+
+</div>
+
+<body>
+<h2> Edycja posta o tytule: {{ post}}  </h2>
+    <form method="POST">
+
+    <br>
+    <label for="content"> Wprowadz zmiany: </label>
+    <textarea name="content" id="content"  >  {{ content }} </textarea>
+    <input type="submit" value="Zapisz zmiany" />   <p style="font: red">{{message}} </p>
+
+  </form>
+
+
+</body>
+</html>

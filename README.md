@@ -1,6 +1,6 @@
 # flask_first_blog
 Flask - first blog 
-blog includes:
+includes:
 -displaying posts
 -editing posts
 -login

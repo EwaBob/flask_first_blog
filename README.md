@@ -1,5 +1,5 @@
 # flask_first_blog
-Flask - first blog 
+Flask/Python - first blog 
 includes:
 -displaying posts
 -editing posts
